@@ -11,6 +11,7 @@ import Detail from "../pages/detail/Detail";
 import About from "../pages/about/About";
 
 const AppRouter = () => {
+  const {curruntUser, setCurruntUser}
   return (
     <BrowserRouter>
       <Navbar />
