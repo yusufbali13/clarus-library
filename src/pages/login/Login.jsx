@@ -2,7 +2,16 @@ import React from 'react'
 
 const Login = () => {
   return (
-    <div>Login</div>
+    <LoginContainer>
+      <FormContainer>
+        <StledForm>
+          <StyledInput type="text"
+          placeholder="Username" />
+
+          </StyledInput>
+        </StledForm>
+      </FormContainer>
+    </LoginContainer>
   )
 }
 

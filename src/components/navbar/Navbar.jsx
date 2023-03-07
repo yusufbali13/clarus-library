@@ -1,17 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { HamburgerIcon, Logo, Menu, MenuLink, Nav } from "./Navbar.style";
+import { menuIcon } from "../../helper/iconData";
 
 const Navbar = () => {
+  const [showMenu, setShowMenu] = useState(false);
   return (
-    <Nav justify="space-between">
+    <Nav justify="space-between" wrap="wrap">
       <Logo to="/">Clarus Library</Logo>
-      <HamburgerIcon>{menuIcon}</HamburgerIcon>
-
-      <Menu>
+      <HamburgerIcon onClick={() => setShowMenu(!showMenu)}>
+        {menuIcon}
+      </HamburgerIcon>
+      <Menu showMenu={showMenu}>
         <MenuLink to="/">Home</MenuLink>
-        <MenuLink to="/about">Home</MenuLink>
-        <MenuLink to="/">Home</MenuLink>
-        <MenuLink to="/">Home</MenuLink>
+        <MenuLink to="/about">About</MenuLink>
+        <MenuLink to="/register">Register</MenuLink>
+        <MenuLink to="/login">Login</MenuLink>
+        <MenuLink to="/login">Logout</MenuLink>
       </Menu>
     </Nav>
   );
