@@ -117,17 +117,17 @@ Build a Clarus Library using ReactJS.
 - You can add additional functionalities to your app.
 
 ## Demo
-  <a href="https://clarus-library.vercel.app/" target="_blank">Clarus Library</a>
+
+<a href="https://clarus-library.vercel.app/" target="_blank">Clarus Library</a>
 
 ## Google Books API
 
 <a href="https://developers.google.com/books/docs/v1/using" target="_blank">Google Books API</a>
 
-
 ## How can we create an apikey for the Google Books API ? Watch the video!
+
 <a href="https://www.youtube.com/watch?v=lg6yA8oSW3s" target="_blank">
 Watch the video
 </a>
-
 
 **<p align="center">&#9786; Happy Coding &#9997;</p>**
