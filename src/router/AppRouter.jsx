@@ -34,7 +34,7 @@ const AppRouter = () => {
 
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />
-          <Route path="/detail" element={<Detail />} />
+          <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
       <Footer />
