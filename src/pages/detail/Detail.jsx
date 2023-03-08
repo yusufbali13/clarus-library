@@ -1,35 +1,40 @@
 import React from "react";
 import { useLocation, useParams } from "react-router-dom";
 import {
-  Description,
   DetailContainer,
-  DetailImg,
   DetailTitle,
+  DetailImg,
+  Description,
   InfoPart,
 } from "./Detail.style";
-import defaultImage from "./../../assets/book.jpg";
-
+import defaultImg from "../../assets/book.jpg";
 const Detail = () => {
   const { state } = useLocation();
   const { id } = useParams();
   console.log(id);
   console.log(state);
+
   return (
     <DetailContainer>
       <DetailTitle>{state.volumeInfo.title}</DetailTitle>
       <DetailImg>
         <img
-          src={state.volumeInfo.imageLinks.thumbnail || defaultImage}
-          alt=""
+          src={state.volumeInfo.imageLinks?.smallThumbnail || defaultImg}
+          alt={state.volumeInfo.title}
         />
       </DetailImg>
       <Description>{state.volumeInfo.description}</Description>
+
       <InfoPart>
-        <p>{state.volumeInfo.authors.join(" - ")}</p>
         <p>
-          {state.volumeInfo.publishedDate}
+          {state.volumeInfo.authors?.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </p>
+        <p>
+          {state.volumeInfo.publishedDate}{" "}
           {state.volumeInfo.publisher && (
-            <span> / state.volumeInfo.publisher</span>
+            <span>/ {state.volumeInfo.publisher} </span>
           )}
         </p>
       </InfoPart>

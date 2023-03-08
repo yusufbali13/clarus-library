@@ -22,8 +22,8 @@ const Login = ({ setCurrentUser }) => {
   return (
     <LoginContainer>
       <FormContainer>
-        <Header>Login Here</Header>
         <StyledForm onSubmit={handleSubmit}>
+          <Header>Login Here</Header>
           <StyledInput type="text" placeholder="Username" required />
           <StyledInput type="password" placeholder="Password" required />
           <StyledButton type="submit">Login</StyledButton>

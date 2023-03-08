@@ -86,7 +86,10 @@ export const HeaderButton = styled.button`
   border-top-left-radius: 1rem;
   border-bottom-right-radius: 1rem;
   &:hover {
-    background: ${({ theme }) => theme.colors.navBarBgColor};
+    background: ${({ theme }) => theme.colors.navbarBgColor};
     transition: all 0.3s ease-in;
+  }
+  @media (max-width: ${({ theme }) => theme.screens.lg}) {
+    border-radius: 5px;
   }
 `;

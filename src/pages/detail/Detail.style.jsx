@@ -32,5 +32,6 @@ export const InfoPart = styled.div`
   margin: 2rem;
   text-align: center;
   span {
+    margin: 1rem;
   }
 `;

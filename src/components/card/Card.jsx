@@ -7,15 +7,16 @@ const Card = ({ item }) => {
   const navigate = useNavigate();
 
   console.log(item);
+
   return (
     <CardContainer>
-      <CardHeader>{item.volumInfo.title}</CardHeader>
-      <CardImg src={item.volumInfo.imageLinks.smallThumbnail || defaultImg} />
+      <CardHeader>{item.volumeInfo.title}</CardHeader>
+      <CardImg src={item.volumeInfo.imageLinks?.smallThumbnail || defaultImg} />
       <CardButton
         onClick={() => navigate(`/detail/${item.id}`, { state: item })}
-        View
-        More
-      ></CardButton>
+      >
+        View More
+      </CardButton>
     </CardContainer>
   );
 };
