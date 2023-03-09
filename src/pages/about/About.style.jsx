@@ -19,7 +19,7 @@ export const InfoContainer = styled.div`
   border: 1px solid white;
   padding: 5rem;
   background: ${({ theme }) => theme.colors.detailBgColor};
-    color: ${({ theme }) => theme.colors.detailColor}};
+  color: ${({ theme }) => theme.colors.detailColor};
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
