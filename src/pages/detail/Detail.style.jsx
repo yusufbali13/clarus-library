@@ -11,7 +11,7 @@ export const DetailPart = styled(Flex)`
   border: 1px solid white;
   border-radius: 5px;
   background-color: ${({ theme }) => theme.colors.detailBgColor};
-  color: ${({ theme }) => theme.colors.detailColor}};
+  color: ${({ theme }) => theme.colors.detailColor};
   width: 80%;
 `;
 
