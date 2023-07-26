@@ -25,20 +25,12 @@ const AppRouter = ({ myTheme, setMyTheme }) => {
           element={<Login setCurrentUser={setCurrentUser} />}
         />
         <Route path="/register" element={<Register />} />
-        {/* <Route path="/about" element={<PrivateRouter />}>
-          <Route path="" element={<About />} />
-        </Route>
-        <Route path="/detail" element={<PrivateRouter />}>
-          <Route path="" element={<Detail />} />
-        </Route> */}
-
         <Route element={<PrivateRouter />}>
           <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />
         </Route>
       </Routes>
       <Footer myTheme={myTheme} setMyTheme={setMyTheme} />
-      {/* statelerimizi footer a yolladık */}
     </BrowserRouter>
   );
 };

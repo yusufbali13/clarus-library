@@ -23,7 +23,7 @@ const About = () => {
         <h4>💬 You can ask me anything you want to know</h4>
         <IconContainer>
           {iconData.map((item) => (
-            <a key={item.icon} href={item.href}>
+            <a key={item.icon} href={item.href} target="_blank">
               <Icon icon={item.icon} path={item.path} hoverColor={item.color} />
             </a>
           ))}

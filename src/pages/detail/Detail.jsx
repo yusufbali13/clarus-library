@@ -15,22 +15,6 @@ const Detail = () => {
   console.log(id);
   console.log(state);
 
-  //! id ye göre veri çekme
-  // const [detailData,setDetailData] = useState();
-  // const APP_KEY = process.env.REACT_APP_apiKey;
-
-  // const url = `https://www.googleapis.com/books/v1/volumes/${id}?key=${APP_KEY}`;
-
-  // const getDetailData = async () =>{
-  //   const {data} = await axios.get(url);
-  //   setDetailData(data);
-  //   console.log(data)
-  // }
-
-  // useEffect(()=>{
-  //   getDetailData();
-  // },[])
-
   return (
     <DetailContainer>
       <DetailPart>
